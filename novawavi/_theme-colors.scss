@@ -2,6 +2,8 @@
 $base: #5e5e5e;
 $gray: #444242;
 $rose: #ff3e3e;
+$beige:#ff543e;
+$orange: #ff9b3e;
 $violet: #a83eff;
 $sky: #3e82ff;
 //map lighten colors
@@ -9,6 +11,8 @@ $lighten-colors:(
     'rose': $rose,
     'violet': $violet,
     'sky': $sky,
+    'beige': $beige,
+    'orange':$orange,
 );
 //map dark colors
 $darkest-colors: (
