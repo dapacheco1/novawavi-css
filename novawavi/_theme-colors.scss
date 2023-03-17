@@ -1,0 +1,42 @@
+//theme colors
+$base: #5e5e5e;
+$gray: #444242;
+$rose: #ff3e3e;
+$violet: #a83eff;
+$sky: #3e82ff;
+//map lighten colors
+$lighten-colors:(
+    'rose': $rose,
+    'violet': $violet,
+    'sky': $sky,
+);
+//map dark colors
+$darkest-colors: (
+  "base": $base,
+  "gray": $gray,
+  
+);
+
+//generate lighten palette
+@each $key,$value in $lighten-colors{
+    @for $i from 1 through 10{
+        .text-#{$key}-#{$i}{
+            color: lighten($value, $i * 2%);
+        }
+        .bg-#{$key}-#{$i}{
+            background-color: lighten($value, $i * 3.5%);
+        }
+    }
+}
+
+//generate darkest palette
+@each $key,$value in $darkest-colors{
+    @for $i from 1 through 10{
+        .text-#{$key}-#{$i}{
+            color: lighten($value, $i * 5%);
+        }
+        .bg-#{$key}-#{$i}{
+            background-color: lighten($value, $i * 6%);
+        }
+    }
+}
