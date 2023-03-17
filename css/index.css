@@ -585,3 +585,23 @@
 .rounded-3xl {
   border-radius: 42px;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
